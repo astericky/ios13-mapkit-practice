@@ -3,19 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A27F12B2473DA4A001CF29F /* LocationsCarouselController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A27F12A2473DA4A001CF29F /* LocationsCarouselController.swift */; };
 		2A8581842473992B001EB4CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8581832473992B001EB4CF /* AppDelegate.swift */; };
 		2A8581862473992B001EB4CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8581852473992B001EB4CF /* SceneDelegate.swift */; };
 		2A8581882473992B001EB4CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8581872473992B001EB4CF /* ContentView.swift */; };
 		2A85818A2473992C001EB4CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A8581892473992C001EB4CF /* Assets.xcassets */; };
 		2A85818D2473992C001EB4CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A85818C2473992C001EB4CF /* Preview Assets.xcassets */; };
 		2A8581902473992C001EB4CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A85818E2473992C001EB4CF /* LaunchScreen.storyboard */; };
+		2A85819924739B8D001EB4CF /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A85819824739B8D001EB4CF /* MainController.swift */; };
+		2A85819C2473AB07001EB4CF /* LBTATools in Frameworks */ = {isa = PBXBuildFile; productRef = 2A85819B2473AB07001EB4CF /* LBTATools */; };
+		2AB657E824744EF500D22805 /* MKMapItem+Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB657E724744EF500D22805 /* MKMapItem+Address.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A27F12A2473DA4A001CF29F /* LocationsCarouselController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsCarouselController.swift; sourceTree = "<group>"; };
 		2A8581802473992B001EB4CF /* MapsDirectionGooglePlaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapsDirectionGooglePlaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A8581832473992B001EB4CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A8581852473992B001EB4CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,8 @@
 		2A85818C2473992C001EB4CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2A85818F2473992C001EB4CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A8581912473992C001EB4CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A85819824739B8D001EB4CF /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		2AB657E724744EF500D22805 /* MKMapItem+Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapItem+Address.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A85819C2473AB07001EB4CF /* LBTATools in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +64,7 @@
 		2A8581822473992B001EB4CF /* MapsDirectionGooglePlaces */ = {
 			isa = PBXGroup;
 			children = (
+				2A85819724739B69001EB4CF /* Main */,
 				2A8581832473992B001EB4CF /* AppDelegate.swift */,
 				2A8581852473992B001EB4CF /* SceneDelegate.swift */,
 				2A8581872473992B001EB4CF /* ContentView.swift */,
@@ -75,6 +84,16 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		2A85819724739B69001EB4CF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2A85819824739B8D001EB4CF /* MainController.swift */,
+				2AB657E724744EF500D22805 /* MKMapItem+Address.swift */,
+				2A27F12A2473DA4A001CF29F /* LocationsCarouselController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -91,6 +110,9 @@
 			dependencies = (
 			);
 			name = MapsDirectionGooglePlaces;
+			packageProductDependencies = (
+				2A85819B2473AB07001EB4CF /* LBTATools */,
+			);
 			productName = MapsDirectionGooglePlaces;
 			productReference = 2A8581802473992B001EB4CF /* MapsDirectionGooglePlaces.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +141,9 @@
 				Base,
 			);
 			mainGroup = 2A8581772473992B001EB4CF;
+			packageReferences = (
+				2A85819A2473AB07001EB4CF /* XCRemoteSwiftPackageReference "LBTATools" */,
+			);
 			productRefGroup = 2A8581812473992B001EB4CF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -146,8 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AB657E824744EF500D22805 /* MKMapItem+Address.swift in Sources */,
+				2A85819924739B8D001EB4CF /* MainController.swift in Sources */,
 				2A8581842473992B001EB4CF /* AppDelegate.swift in Sources */,
 				2A8581862473992B001EB4CF /* SceneDelegate.swift in Sources */,
+				2A27F12B2473DA4A001CF29F /* LocationsCarouselController.swift in Sources */,
 				2A8581882473992B001EB4CF /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,6 +370,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2A85819A2473AB07001EB4CF /* XCRemoteSwiftPackageReference "LBTATools" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bhlvoong/LBTATools.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.17;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2A85819B2473AB07001EB4CF /* LBTATools */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A85819A2473AB07001EB4CF /* XCRemoteSwiftPackageReference "LBTATools" */;
+			productName = LBTATools;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2A8581782473992B001EB4CF /* Project object */;
 }
